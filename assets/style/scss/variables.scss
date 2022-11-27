@@ -1,0 +1,33 @@
+$primaryColor: #D41028;
+$errorcolor: #96001C;
+$mainTextColor: #141414;
+$headerBannerTextColor: #EFEFEF;
+
+/*IconFont variables*/
+$icomoon-font-family: "academy-smart" ;
+$icomoon-font-path: "../fonts";
+
+$icon-enterprise-ico: "\e900";
+$icon-poc-mvp-ico: "\e901";
+$icon-remote-partner-ico: "\e902";
+$icon-startup-ico: "\e903";
+$icon-team-for-scaling-ico: "\e904";
+$icon-tech-product-ico: "\e905";
+$icon-action-btn-ico: "\e906";
+$icon-attach-ico: "\e907";
+$icon-fb-ico: "\e908";
+$icon-in-ico: "\e909";
+$icon-insta-ico: "\e90a";
+$icon-twitter-ico: "\e90b";
+$icon-up-ico: "\e90c";
+$icon-youtube-ico: "\e90d";
+$icon-prev-icon: "\e90e";
+
+
+
+:root {
+    //mmenu variables
+    --mm-ocd-max-width: 360px;
+    --mm-ocd-min-width: 320px;
+
+}

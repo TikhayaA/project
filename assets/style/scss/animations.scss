@@ -1,0 +1,6 @@
+@keyframes filter {
+	0%   {filter: grayscale(1);}
+	25%  {filter: grayscale(0);}
+	50%  {filter: grayscale(1);}
+	100% {filter: grayscale(1);}
+}
