@@ -1572,16 +1572,6 @@ h2 {
       margin-top: 40px;
       max-width: 610px;
       font-size: 16px; }
-  .blog .main-banner .technology-image-wrapper {
-    max-width: 343px; }
-    @media all and (max-width: 1500px) {
-      .blog .main-banner .technology-image-wrapper {
-        max-width: 212px; } }
-    @media all and (max-width: 900px) {
-      .blog .main-banner .technology-image-wrapper {
-        margin-top: 50px; } }
-    .blog .main-banner .technology-image-wrapper img {
-      width: 100%; }
   .blog .main-banner .technologies-wrapper {
     margin-top: 85px;
     list-style: none;
@@ -2205,7 +2195,9 @@ h2 {
   margin: 50px 0 0; }
   .pagination .page-value.active {
     background-color: #d41028;
-    color: #f0f0f0; }
+    color: #f0f0f0;
+    pointer-events: none;
+    cursor: none; }
   .pagination .page-value:hover {
     border-color: #d41028; }
   .pagination .pagination-item + .pagination-item {
@@ -2224,6 +2216,8 @@ h2 {
     font-weight: 500;
     position: relative;
     cursor: pointer; }
+  .pagination .pagination-btn:hover {
+    border-color: #d41028; }
   .pagination .pagination-btn:before {
     content: '';
     background-size: cover;

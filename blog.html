@@ -19,8 +19,8 @@
       <header class="header dark">
          <div class="help-container header__wrap">
             <a href="/" class="main-logo">
-               <img class="lazyload" data-src="assets/svg/logo_white_SMART.svg" alt="main-logo" class="white-logo">
-               <img class="lazyload" data-src="assets/svg/logo_colorful_SMART.svg" alt="main-logo" class="colorful-logo">
+               <img src="assets/svg/logo_white_SMART.svg" alt="main-logo" class="white-logo">
+               <img src="assets/svg/logo_colorful_SMART.svg" alt="main-logo" class="colorful-logo">
             </a>
             <div class="header__nav-wrapper">
                <ul class="header__nav">
@@ -85,12 +85,6 @@
                 </li>
               </ul>
             </div>
-            <div class="technology-image-wrapper">
-              <noscript>
-                <img class="lazyload" data-src="assets/image/blog-banner-bg.webp"  alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
-              </noscript>
-              <img class="lazyload" data-src="assets/image/blog-banner-bg.webp"  alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
-            </div>
           </div>
         </section>
         <div class="blog-filter">
@@ -125,8 +119,8 @@
               </div>
               <form class="search-wrapper" method="get" action="/index.php">
                 <div class="close-search"></div>
-                <input type="search" placeholder="Type here" name="s">
-                <button type="submit" class="search-submit-btn"></button>
+                <input id="search" type="search" name="search" autocomplete="off" placeholder="Type here">
+                <button type="submit" class="search-submit-btn" aria-label="search"></button>
               </form>
             </div>
           </div>
@@ -329,12 +323,13 @@
             </div>
             <!-- The pagination component -->
             <div class="pagination" aria-label="Posts navigation">
-              <span aria-current="page" class="pagination-item page-value active current">1</span>
+              <a href="#" class="pagination-item prev-btn pagination-btn" arial-label="previous-button"></a>
+              <a href="#" class="pagination-item page-value active current">1</a>
               <a class="pagination-item page-value" href="#">2</a>
               <a class="pagination-item page-value" href="#">3</a>
               <span class="pagination-item page-value dots">…</span>
               <a class="pagination-item page-value" href="#">17</a>
-              <a href="#" class="pagination-item next-btn pagination-btn"></a>
+              <a href="#" class="pagination-item next-btn pagination-btn" arial-label="next-button"></a>
             </div>
           </div>
         </section>

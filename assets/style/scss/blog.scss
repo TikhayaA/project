@@ -32,18 +32,6 @@
                 font-size: 16px;
             }
 		}
-		.technology-image-wrapper {
-			max-width: 343px;
-			@media all and (max-width: 1500px) {
-				max-width: 212px;
-			}
-			@media all and (max-width: 900px) {
-				margin-top: 50px;
-			}
-			img{
-				width: 100%;
-			}
-		}
 		.technologies-wrapper {
 			margin-top: 85px;
 			list-style: none;
@@ -865,6 +853,8 @@
 	.page-value.active {
 		background-color: #d41028;
 		color: #f0f0f0;
+		pointer-events: none;
+		cursor: none;
 	}
 	.page-value:hover {
 		border-color: #d41028;
@@ -886,6 +876,11 @@
 		font-weight: 500;
 		position: relative;
 		cursor: pointer;
+	}
+	.pagination-btn{
+		&:hover {
+			border-color: #d41028;
+		}
 	}
 	.pagination-btn:before {
 		content: '';
