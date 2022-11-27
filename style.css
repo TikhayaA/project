@@ -2246,26 +2246,6 @@ h2 {
     .article-additional-info {
       flex-direction: column;
       align-items: flex-start; } }
-  .article-additional-info .share {
-    display: flex;
-    align-items: center; }
-    @media all and (max-width: 565px) {
-      .article-additional-info .share {
-        margin-top: 20px; } }
-    .article-additional-info .share__title {
-      font-size: 18px;
-      line-height: 18px; }
-    .article-additional-info .share__icon {
-      text-decoration: none;
-      margin-left: 25px;
-      overflow: hidden;
-      border-radius: 50%;
-      transition: all linear .2s; }
-      @media all and (max-width: 1100px) {
-        .article-additional-info .share__icon img {
-          width: 34px; } }
-      .article-additional-info .share__icon:hover {
-        box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3); }
   .article-additional-info .visitors-statistic {
     display: flex;
     align-items: center;
@@ -2289,6 +2269,27 @@ h2 {
     .article-additional-info .visitors-statistic__item-link {
       display: flex;
       align-items: center; }
+
+.share {
+  display: flex;
+  align-items: center; }
+  @media all and (max-width: 565px) {
+    .share {
+      margin-top: 20px; } }
+  .share__title {
+    font-size: 18px;
+    line-height: 18px; }
+  .share__icon {
+    text-decoration: none;
+    margin-left: 25px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all linear .2s; }
+    @media all and (max-width: 1100px) {
+      .share__icon img {
+        width: 34px; } }
+    .share__icon:hover {
+      box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3); }
 
 .created {
   display: flex;
@@ -2336,6 +2337,9 @@ h2 {
 
 .article-page {
   margin-top: 0; }
+  @media all and (max-width: 1400px) {
+    .article-page {
+      overflow: hidden; } }
   .article-page .article-additional-info {
     border: none;
     padding-top: 0; }
@@ -2512,6 +2516,12 @@ h2 {
       height: 100%;
       width: 1370px;
       z-index: -1; }
+      @media all and (max-width: 1500px) {
+        #block.article-main-content .page-map:after {
+          width: 1200px; } }
+      @media all and (max-width: 1400px) {
+        #block.article-main-content .page-map:after {
+          width: 1100px; } }
     #block.article-main-content .page-map .page-map-list.page-map-list-level-2 {
       margin: 0  0 0 10px; }
       #block.article-main-content .page-map .page-map-list.page-map-list-level-2 .page-map-list__link {
@@ -2544,6 +2554,12 @@ h2 {
   top: 325px;
   left: -240px;
   margin-bottom: 40px; }
+  @media all and (max-width: 1100px) {
+    .post-author {
+      left: -170px; } }
+  @media all and (max-width: 900px) {
+    .post-author {
+      position: initial; } }
   .post-author__ava img {
     max-width: 100px;
     border-radius: 50%;
@@ -2562,26 +2578,11 @@ h2 {
   .post-author .author-socials {
     display: flex;
     gap: 15px; }
-    .post-author .author-socials a {
-      width: 18px;
-      height: 18px;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: cover; }
+    .post-author .author-socials a svg g path {
+      fill: #141414; }
 
-.share-block.fixed.visible {
-  right: 400px; }
-
-.share-block.fixed {
-  flex-direction: column;
-  align-items: flex-start;
-  position: fixed;
-  right: -100px;
-  top: 100px;
-  transition: all linear .2s; }
-
-.share-block.fixed .as-icon + .as-icon {
-  margin-top: 30px; }
+.reactions-wrap {
+  padding: 30px 0 30px; }
 
 .popular-articles-section {
   padding: 100px 0 30px; }
@@ -2603,6 +2604,23 @@ h2 {
 
 .related-tags {
   padding: 100px 0 30px; }
+
+.share-block {
+  display: flex;
+  align-items: center; }
+  .share-block.fixed {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    right: -100px;
+    top: 100px;
+    transition: all linear .2s; }
+    .share-block.fixed .share__icon {
+      margin-left: 0; }
+      .share-block.fixed .share__icon + .share__icon {
+        margin-top: 30px; }
+    .share-block.fixed.visible {
+      right: 400px; }
 
 .author-page .banner-section {
   padding: 200px 0 155px; }
