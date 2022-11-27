@@ -87,9 +87,9 @@
             </div>
             <div class="technology-image-wrapper">
               <noscript>
-                <img class="lazyload" data-src="assets/svg/blog-banner-img.svg"  alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
-            </noscript>
-              <img class="lazyload" data-src="assets/svg/blog-banner-img.svg"  alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                <img class="lazyload" data-src="assets/image/blog-banner-bg.webp"  alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+              </noscript>
+              <img class="lazyload" data-src="assets/image/blog-banner-bg.webp"  alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
             </div>
           </div>
         </section>
@@ -102,8 +102,8 @@
                 <a href="#" id="date" class="sorter active">Date</a>
               </div>
               <form class="search-wrapper" method="get" action="/index.php">
-                <input type="search" name="s" autocomplete="off" placeholder="Type here">
-                <button type="submit" class="search-submit-btn"></button>
+                <input id="search" type="search" name="search" autocomplete="off" placeholder="Type here">
+                <button type="submit" class="search-submit-btn" aria-label="search"></button>
               </form>
             </div>
             <div class="mobile-filter-wrapper">
@@ -193,9 +193,9 @@
                 </div>
                 <div class="article-img">
                   <noscript>
-                    <img class="lazyload" data-src="assets/image/what-to-choose.jpeg"  alt="what to choose?">
-                </noscript>
-                  <img class="lazyload" data-src="assets/image/what-to-choose.jpeg"  alt="what to choose?" width="auto" height="auto">
+                    <img class="lazyload" data-src="assets/image/what-to-choose.webp"  alt="what to choose?">
+                  </noscript>
+                  <img class="lazyload" data-src="assets/image/what-to-choose.webp"  alt="what to choose?">
                 </div>
               </div>
               <div class="article-item" id="post-5803">
@@ -502,20 +502,20 @@
                     <span class="section-title">challenge?</span>
                 </div>
                 <div class="form-row input-wrapper">
-                    <input type="text" required>
-                    <label>Name*</label>
+                    <input id="name" type="text" required>
+                    <label for="name">Name*</label>
                     <span class="bar"></span>
                     <span class="additional-text">enter your Name and Surname</span>
                 </div>
                 <div class="form-row input-wrapper">
-                    <input type="email" required>
-                    <label>Email*</label>
+                    <input id="email" type="email" required>
+                    <label for="email">Email*</label>
                     <span class="bar"></span>
                     <span class="additional-text">enter your Email</span>
                 </div>
                 <div class="form-row input-wrapper">
-                    <input type="text">
-                    <label>What’s your IT challenge?</label>
+                    <input id="it-challenge" type="text">
+                    <label for="it-challenge" >What’s your IT challenge?</label>
                     <span class="bar"></span>
                     <span class="additional-text">describe your question</span>
                 </div>
