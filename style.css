@@ -2621,10 +2621,17 @@ h2 {
         margin-top: 30px; }
     .share-block.fixed.visible {
       right: 400px; }
+      @media all and (max-width: 1500px) {
+        .share-block.fixed.visible {
+          right: 100px; } }
 
-.author-page .banner-section {
+.author-page .main-banner {
+  background-image: url("assets/image/author-hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 200px 0 155px; }
-  .author-page .banner-section .container {
+  .author-page .main-banner .container {
     position: relative;
     z-index: 2; }
 .author-page__name {

@@ -357,6 +357,9 @@
         }
         &.visible {
             right: 400px;
+            @media all and (max-width: 1500px) {
+                right: 100px;
+            }
         }
     }
 }

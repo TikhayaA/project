@@ -9,8 +9,10 @@
       <link href="reset.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/mapbox-gl.css">
       <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/aos.css">
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <script src="https://widget.clutch.co/static/js/widget.js"></script>
+      <script src="assets/js/aos.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async defer></script>
    </head>
    <body>
@@ -37,11 +39,7 @@
          </div>
       </header>
       <main class="main author-page">
-        <section class="banner-section">
-          <noscript>
-            <img src="/wp-content/themes/academysmart/img/author-hero.jpg" alt="author-banner" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
-          </noscript>
-          <img class="aos-init aos-animate lazyloaded" src="/wp-content/themes/academysmart/img/author-hero.jpg" data-src="/wp-content/themes/academysmart/img/author-hero.jpg" alt="author-banner" data-aos="fade" data-aos-duration="1000" data-aos-delay="300">
+        <section class="main-banner" data-aos="fade" data-aos-duration="1000" data-aos-delay="700">
           <div class="author-page__content container">
             <h1 class="author-page__name">Iryna Kurkina</h1>
           </div>
@@ -396,12 +394,13 @@
             </div>
             <!-- The pagination component -->
             <div class="pagination" aria-label="Posts navigation">
-              <span aria-current="page" class="pagination-item page-value active current">1</span>
-              <a class="pagination-item page-value" href="https://academysmart.com/author/iryna_kurkina/page/2/">2</a>
-              <a class="pagination-item page-value" href="https://academysmart.com/author/iryna_kurkina/page/3/">3</a>
+              <a href="#" class="pagination-item prev-btn pagination-btn" arial-label="previous-button"></a>
+              <a href="#" class="pagination-item page-value active current">1</a>
+              <a class="pagination-item page-value" href="#">2</a>
+              <a class="pagination-item page-value" href="#">3</a>
               <span class="pagination-item page-value dots">…</span>
-              <a class="pagination-item page-value" href="https://academysmart.com/author/iryna_kurkina/page/8/">8</a>
-              <a href="https://academysmart.com/author/iryna_kurkina/page/2/" class="pagination-item next-btn pagination-btn"></a>
+              <a class="pagination-item page-value" href="#">17</a>
+              <a href="#" class="pagination-item next-btn pagination-btn" arial-label="next-button"></a>
             </div>
           </div>
         </section>
@@ -412,72 +411,46 @@
                 <p role="status" aria-live="polite" aria-atomic="true"></p>
                 <ul></ul>
               </div>
-              <form action="/author/iryna_kurkina/#wpcf7-f8-o1" method="post" class="wpcf7-form init contact-us-form material-form" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-                <div style="display: none;">
-                  <input type="hidden" name="_wpcf7" value="8">
-                  <input type="hidden" name="_wpcf7_version" value="5.6.4">
-                  <input type="hidden" name="_wpcf7_locale" value="ru_RU">
-                  <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f8-o1">
-                  <input type="hidden" name="_wpcf7_container_post" value="0">
-                  <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                  <input type="hidden" name="_wpcf7_recaptcha_response" value="">
-                </div>
+              <form class="contact-us-form">
                 <div class="section-title-wrapper">
-                  <span class="section-subtitle">What’s your IT </span>
-                  <span class="section-title">challenge?</span>
+                    <span class="section-subtitle">What’s your IT </span>
+                    <span class="section-title">challenge?</span>
                 </div>
                 <div class="form-row input-wrapper">
-                  <span class="wpcf7-form-control-wrap" data-name="your-name">
-                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
-                    <label>Name*</label>
+                    <input id="name" type="text" required>
+                    <label for="name">Name*</label>
+                    <span class="bar"></span>
                     <span class="additional-text">enter your Name and Surname</span>
-                    <span class="bar"></span>
-                  </span>
                 </div>
                 <div class="form-row input-wrapper">
-                  <span class="wpcf7-form-control-wrap" data-name="your-email">
-                    <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false">
-                    <label>Email*</label>
+                    <input id="email" type="email" required>
+                    <label for="email">Email*</label>
+                    <span class="bar"></span>
                     <span class="additional-text">enter your Email</span>
-                    <span class="bar"></span>
-                  </span>
                 </div>
                 <div class="form-row input-wrapper">
-                  <span class="wpcf7-form-control-wrap" data-name="your-message">
-                    <input type="text" name="your-message" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false">
-                    <label>What’s your IT challenge?</label>
-                    <span class="additional-text">describe your question</span>
+                    <input id="it-challenge" type="text">
+                    <label for="it-challenge" >What’s your IT challenge?</label>
                     <span class="bar"></span>
-                  </span>
+                    <span class="additional-text">describe your question</span>
                 </div>
-                <div class="form-row">
-                  <div class="file-input-wrapper">
-                    <span class="wpcf7-form-control-wrap" data-name="file-input">
-                      <input type="file" name="file-input" size="40" class="wpcf7-form-control wpcf7-file" id="file-input" accept=".pdf,.doc" aria-invalid="false">
-                    </span>
-                    <label for="file-input">Attach file (*.pdf, *.doc)</label>
-                  </div>
+                <div class="form-row file-input input-wrapper">
+                    <div class="file-input__wrapper">
+                        <input id="file-input-vacancy" type="file">
+                        <label for="file-input-vacancy">Attach file (*.pdf, *.doc) </label>
+                    </div>
                 </div>
-                <span class="wpcf7-form-control-wrap recaptcha" data-name="recaptcha">
-                  <span data-sitekey="6LeP9cUhAAAAAKADcsXiQSob9hjEgxqARghppckc" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha">
-                    <div style="width: 304px; height: 78px;">
-                      <div>
-                        <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeP9cUhAAAAAKADcsXiQSob9hjEgxqARghppckc&amp;co=aHR0cHM6Ly9hY2FkZW15c21hcnQuY29tOjQ0Mw..&amp;hl=en&amp;v=Km9gKuG06He-isPsP6saG8cn&amp;size=normal&amp;cb=km5f799nr3jr" width="304" height="78" role="presentation" name="a-qqgvkrqztuvb" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                      </div>
-                      <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                    </div>
-                  </span>
-                  <noscript>
-                    <div class="grecaptcha-noscript">
-                      <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LeP9cUhAAAAAKADcsXiQSob9hjEgxqARghppckc" frameborder="0" scrolling="no" width="310" height="430"></iframe>
-                      <textarea name="g-recaptcha-response" rows="3" cols="40" placeholder="reCaptcha Response Here"></textarea>
-                    </div>
-                  </noscript>
-                </span>
-                <button id="submit" class="wpcf7-form-control wpcf7-submit action-btn submit-btn">
-                  <span>get in touch</span>
+                <div class="form-row input-wrapper">
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                </div>
+                <button class="action-btn">
+                    <span>get in touch</span>
                 </button>
-                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                <span class="form-info">
+                    By clicking “Send now” you consent to the processing of your data by AcademySMART company
+                    for marketing purposes, including sending emails. For details, check our
+                    <a href="#">Privacy Policy.</a>
+                </span>
               </form>
             </div>
           </div>

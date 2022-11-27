@@ -1,5 +1,9 @@
 .author-page{
-    .banner-section {
+    .main-banner {
+        background-image: url('assets/image/author-hero.jpeg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
         padding: 200px 0 155px;
         .container {
             position: relative;
