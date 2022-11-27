@@ -293,18 +293,19 @@
         line-height: 20px;
         margin-bottom: 15px;
     }
-    .author-socials {
-        display: flex;
-        gap: 15px;
-        a{
-            svg{
-                g{
-                    path{
-                        fill:#141414;
-                    }
+    
+}
+.author-socials {
+    display: flex;
+    gap: 15px;
+    a{
+        svg{
+            g{
+                path{
+                    fill:#141414;
                 }
-                
             }
+            
         }
     }
 }

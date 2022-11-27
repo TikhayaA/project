@@ -7,7 +7,6 @@
 body {
 	font: 300 16px/21px 'Roboto', sans-serif;
 	color: $mainTextColor;
-	overflow-x: hidden;
 
 	&.has-sticky-header {
 		margin-top: 60px;
@@ -221,6 +220,7 @@ h2 {
 }
 .main {
 	margin-top: -60px;
+	overflow: hidden;
 }
 .action-btn{
 	height: 60px;
