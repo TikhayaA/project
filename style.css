@@ -2519,10 +2519,12 @@ h2 {
       margin: 0  0 0 10px; }
       #block.article-main-content .page-map .page-map-list.page-map-list-level-2 .page-map-list__link {
         line-height: 22px; }
-      #block.article-main-content .page-map .page-map-list.page-map-list-level-2 > li {
+      #block.article-main-content .page-map .page-map-list.page-map-list-level-2 li {
         margin-top: 10px; }
     #block.article-main-content .page-map .page-map-list.page-map-list-level-3 {
       margin: 0  0 0 20px; }
+      #block.article-main-content .page-map .page-map-list.page-map-list-level-3 li {
+        margin-top: 0px; }
     #block.article-main-content .page-map .page-map-list__link {
       font-size: 16px;
       line-height: 24px;
