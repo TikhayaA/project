@@ -2205,7 +2205,7 @@ h2 {
   .pagination .pagination-item + .pagination-item {
     margin-left: 12px; }
   .pagination .pagination-item {
-    border: 0.5px solid #f0f0f0;
+    border: 0.5px solid #999;
     border-radius: 50%;
     width: 36px;
     height: 36px;
@@ -2656,7 +2656,7 @@ h2 {
           right: 10px; } }
 
 .author-page .main-banner {
-  background-image: url("assets/image/author-hero.jpeg");
+  background-image: url("assets/image/author-hero.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
