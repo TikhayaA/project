@@ -2205,7 +2205,7 @@ h2 {
   .pagination .pagination-item + .pagination-item {
     margin-left: 12px; }
   .pagination .pagination-item {
-    border: 0.5px solid #999;
+    border: 0.5px solid #f0f0f0;
     border-radius: 50%;
     width: 36px;
     height: 36px;
@@ -2215,7 +2215,7 @@ h2 {
     transition: all linear .2s;
     text-decoration: none;
     color: #999;
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
     cursor: pointer; }
   .pagination .pagination-btn:hover {
@@ -2336,7 +2336,8 @@ h2 {
     font-weight: 900;
     font-size: 14px;
     line-height: 16px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 0.5px; }
 
 .article-page {
   margin-top: 0; }
