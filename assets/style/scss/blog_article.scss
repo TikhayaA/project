@@ -90,6 +90,9 @@
                 line-height: 26px;
                 color: #000;
                 margin: 15px 0;
+                @media all and (max-width: 900px) {
+                    text-align: center;
+                }
             }
             h3 {
                 display: block;
@@ -159,7 +162,7 @@
             line-height: 16px;
             color: #2e2e2e;
             top: 3px;
-            right: 3px;
+            right: 8px;
         }
         a {
             text-decoration: none;
@@ -173,6 +176,11 @@
             font-size: 14px;
             line-height: 16px;
             color: #2e2e2e;
+        }
+    }
+    :last-child{
+        &:before{
+            content: none;
         }
     }
 }
@@ -311,6 +319,13 @@
 }
 .reactions-wrap{
     padding: 30px 0 30px;
+    display: flex;
+    justify-content: center;
+    .reaction-title{
+        color: #000000;
+        font-size: 24px;
+        font-weight: 700;
+    }
 }
 
 .popular-articles-section {
@@ -329,6 +344,10 @@
         overflow: hidden;
         flex-shrink: 0;
         margin-right: 25px;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
         .article-item__info {
             width: 100%;
@@ -360,6 +379,12 @@
             right: 400px;
             @media all and (max-width: 1500px) {
                 right: 100px;
+            }
+            @media all and (max-width: 900px) {
+                right: 50px;
+            }
+            @media all and (max-width: 600px) {
+                right: 10px;
             }
         }
     }

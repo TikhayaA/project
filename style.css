@@ -2289,7 +2289,8 @@ h2 {
     transition: all linear .2s; }
     @media all and (max-width: 1100px) {
       .share__icon img {
-        width: 34px; } }
+        width: 34px;
+        height: 34px; } }
     .share__icon:hover {
       box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3); }
 
@@ -2416,6 +2417,9 @@ h2 {
     line-height: 26px;
     color: #000;
     margin: 15px 0; }
+    @media all and (max-width: 900px) {
+      .article .article-main-content .post-content h2 {
+        text-align: center; } }
   .article .article-main-content .post-content h3 {
     display: block;
     font-weight: 700;
@@ -2473,7 +2477,7 @@ h2 {
       line-height: 16px;
       color: #2e2e2e;
       top: 3px;
-      right: 3px; }
+      right: 8px; }
     .breadcrumbs-wrapper li a {
       text-decoration: none;
       font-weight: 300;
@@ -2485,6 +2489,8 @@ h2 {
       font-size: 14px;
       line-height: 16px;
       color: #2e2e2e; }
+  .breadcrumbs-wrapper :last-child:before {
+    content: none; }
 
 #block.article-main-content {
   padding-top: 2em;
@@ -2585,7 +2591,13 @@ h2 {
     fill: #141414; }
 
 .reactions-wrap {
-  padding: 30px 0 30px; }
+  padding: 30px 0 30px;
+  display: flex;
+  justify-content: center; }
+  .reactions-wrap .reaction-title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700; }
 
 .popular-articles-section {
   padding: 100px 0 30px; }
@@ -2601,6 +2613,9 @@ h2 {
     overflow: hidden;
     flex-shrink: 0;
     margin-right: 25px; }
+    .popular-articles-section .popular-article__item .image-thumb img {
+      width: 100%;
+      height: auto; }
   .popular-articles-section .popular-article__item .article-item__info {
     width: 100%;
     padding: 0; }
@@ -2627,6 +2642,12 @@ h2 {
       @media all and (max-width: 1500px) {
         .share-block.fixed.visible {
           right: 100px; } }
+      @media all and (max-width: 900px) {
+        .share-block.fixed.visible {
+          right: 50px; } }
+      @media all and (max-width: 600px) {
+        .share-block.fixed.visible {
+          right: 10px; } }
 
 .author-page .main-banner {
   background-image: url("assets/image/author-hero.jpeg");
