@@ -1246,7 +1246,7 @@ h2 {
           top: -2px;
           left: 0; }
   .contact-us-form.right-form-part .action-btn {
-    max-width: 288px;
+    max-width: 100%;
     width: 100%;
     margin: 30px auto 0;
     display: block; }
@@ -1536,6 +1536,9 @@ h2 {
           line-height: 24px;
           display: block;
           font-weight: 300; }
+  .map-section .mapboxgl-ctrl-group button {
+    width: 40px;
+    height: 40px; }
 
 .g-recaptcha {
   display: flex;
