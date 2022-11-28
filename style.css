@@ -2214,8 +2214,8 @@ h2 {
     justify-content: center;
     transition: all linear .2s;
     text-decoration: none;
-    color: #999;
-    font-weight: 700;
+    color: #000;
+    font-weight: 500;
     position: relative;
     cursor: pointer; }
   .pagination .pagination-btn:hover {
@@ -2327,7 +2327,7 @@ h2 {
     padding-left: 10px; }
 
 .tag {
-  background-color: rgba(212, 16, 40, 0.8);
+  background: #D41028;
   color: #fff;
   padding: 12px 24px;
   display: inline-block;
