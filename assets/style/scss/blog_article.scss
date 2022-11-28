@@ -233,6 +233,9 @@
                 margin: 0  0 0 10px;
                 .page-map-list__link{
                     line-height: 22px;
+                    @media all and (max-width: 700px) {
+                        line-height: 24px;
+                    }
                 }
                 li{
                     margin-top: 10px;
@@ -242,6 +245,9 @@
                 margin: 0  0 0 20px;
                 li{
                     margin-top: 0px;
+                    @media all and (max-width: 700px) {
+                        margin-top: 10px;
+                    }
                 }
             }
             &__link {

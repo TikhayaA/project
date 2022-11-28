@@ -1542,7 +1542,7 @@ h2 {
   justify-content: center; }
 
 .blog .main-banner {
-  background-image: url("assets/image/blog-banner-bg.jpeg");
+  background-image: url("assets/image/blog-banner-bg.webp");
   padding: 190px 0 170px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2534,12 +2534,18 @@ h2 {
       margin: 0  0 0 10px; }
       #block.article-main-content .page-map .page-map-list.page-map-list-level-2 .page-map-list__link {
         line-height: 22px; }
+        @media all and (max-width: 700px) {
+          #block.article-main-content .page-map .page-map-list.page-map-list-level-2 .page-map-list__link {
+            line-height: 24px; } }
       #block.article-main-content .page-map .page-map-list.page-map-list-level-2 li {
         margin-top: 10px; }
     #block.article-main-content .page-map .page-map-list.page-map-list-level-3 {
       margin: 0  0 0 20px; }
       #block.article-main-content .page-map .page-map-list.page-map-list-level-3 li {
         margin-top: 0px; }
+        @media all and (max-width: 700px) {
+          #block.article-main-content .page-map .page-map-list.page-map-list-level-3 li {
+            margin-top: 10px; } }
     #block.article-main-content .page-map .page-map-list__link {
       font-size: 16px;
       line-height: 24px;
