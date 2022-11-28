@@ -193,6 +193,7 @@ if (document.querySelector('[data-aos]')) {
     AOS.init({
         offset: 50,
         once: true,
+        disable: 'mobile',
     });
 }
 
