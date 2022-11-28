@@ -1540,10 +1540,6 @@ h2 {
     width: 40px;
     height: 40px; }
 
-.g-recaptcha {
-  display: flex;
-  justify-content: center; }
-
 .blog .main-banner {
   background-image: url("assets/image/blog-banner-bg.webp");
   padding: 190px 0 170px;
@@ -2330,7 +2326,7 @@ h2 {
     padding-left: 10px; }
 
 .tag {
-  background: #D41028;
+  background-color: rgba(212, 16, 40, 0.8);
   color: #fff;
   padding: 12px 24px;
   display: inline-block;
