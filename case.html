@@ -96,9 +96,9 @@
                             <span class="sort-type">Sort by Technologies</span>
                             <ul class="dropdown"><li><a href="https://academysmart.com/technology/net/">.NET</a></li><li><a href="https://academysmart.com/technology/ajax/">Ajax</a></li><li><a href="https://academysmart.com/technology/angular/">Angular</a></li><li><a href="https://academysmart.com/technology/asp/">ASP</a></li><li><a href="https://academysmart.com/technology/aws/">AWS</a></li><li><a href="https://academysmart.com/technology/azure/">Azure</a></li><li><a href="https://academysmart.com/technology/bootstrap/">Bootstrap</a></li><li><a href="https://academysmart.com/technology/crud/">CRUD</a></li><li><a href="https://academysmart.com/technology/css/">CSS</a></li><li><a href="https://academysmart.com/technology/doker/">Doker</a></li><li><a href="https://academysmart.com/technology/html/">HTML</a></li><li><a href="https://academysmart.com/technology/java/">Java</a></li><li><a href="https://academysmart.com/technology/javascript/">JavaScript</a></li><li><a href="https://academysmart.com/technology/jquery/">jQuery</a></li><li><a href="https://academysmart.com/technology/moodle/">Moodle</a></li><li><a href="https://academysmart.com/technology/ms-sql/">MS SQL</a></li><li><a href="https://academysmart.com/technology/mysql/">MySQL</a></li><li><a href="https://academysmart.com/technology/node-js/">Node.JS</a></li><li><a href="https://academysmart.com/technology/php/">PHP</a></li><li><a href="https://academysmart.com/technology/postgresql/">PostgreSQL</a></li><li><a href="https://academysmart.com/technology/python/">Python</a></li><li><a href="https://academysmart.com/technology/rest/">REST</a></li><li><a href="https://academysmart.com/technology/scorm/">SCORM</a></li><li><a href="https://academysmart.com/technology/spring/">Spring</a></li><li><a href="https://academysmart.com/technology/yii/">Yii</a></li></ul>					</div>
                     </div>
-                    <form class="search-wrapper">
-                        <input type="search">
-                        <button type="submit" class="search-submit-btn"></button>
+                    <form class="search-wrapper" method="get" action="/index.php">
+                      <input id="search" type="search" name="search" autocomplete="off" placeholder="Type here">
+                      <button type="submit" class="search-submit-btn" aria-label="search"></button>
                     </form>
                 </div>
                 <div class="mobile-filter-wrapper">
