@@ -210,10 +210,7 @@
             position: absolute;
             left: 50%;
             top: 0;
-            -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-            -o-transform: translateX(-50%);
-            transform: translateX(-50%);
+            @include x-transform;
             box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 10%);
             background: #f7f7f7;
             height: 100%;

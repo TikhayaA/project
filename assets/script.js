@@ -133,7 +133,47 @@ formInputs.forEach(element => element.addEventListener('change', () => {
         element.classList.remove('active');
     }
 }));
-// mobile sort
+
+//Sort dropdown
+
+const sortItemArray = document.querySelectorAll('.sort-item');
+if (sortItemArray) {
+    for (let i = 0; i < sortItemArray.length; i++) {
+        const dropdownItem = sortItemArray[i].querySelector('.dropdown');
+        if (dropdownItem) {
+
+            const dropdownItemHeight = dropdownItem.clientHeight;
+            sortItemArray[i].classList.remove('active');
+            dropdownItem.style.height = '0px';
+
+            document.addEventListener('click', function (e) {
+                const isClickInside = sortItemArray[i].contains(e.target);
+
+                if (!isClickInside) {
+                    sortItemArray[i].classList.remove('active');
+                    dropdownItem.style.height = '0px';
+                }
+            });
+
+            sortItemArray[i].addEventListener('click', () => {
+                if (sortItemArray[i].classList.contains('active')) {
+                    sortItemArray[i].classList.remove('active');
+                    dropdownItem.style.height = '0px';
+                } else {
+                    for (let j = 0; j < sortItemArray.length; j++) {
+                        sortItemArray[j].classList.remove('active');
+                        sortItemArray[j].querySelector('.dropdown').style.height = '0px';
+                    }
+                    sortItemArray[i].classList.add('active');
+                    dropdownItem.style.height = dropdownItemHeight + 'px';
+                }
+            });
+        }
+
+
+    }
+}
+
 const mobileSortBtn = document.querySelector('.sort-mobile-btn');
 const mobileSortList = document.querySelector('.mobile-sort');
 
@@ -236,4 +276,76 @@ if (progressValueEL) {
         let scrollPercent = scrollTop / scrollBottom * 100 + "%";
         progressValueEL.style.setProperty("--scroll", scrollPercent);
     },{ passive: true });
+}
+
+function paginationItemClickHandler(el) {
+    var target = el.getAttribute("href").replace("#", "");
+    console.log(el.getAttribute("href"));
+    history.pushState(null, null, el.getAttribute("href"));
+
+    var sectionSelector = document.querySelectorAll(".portfolio-page-item");
+    for (j = 0; j < sectionSelector.length; j++) {
+        //Hide all the Tab content
+        sectionSelector[j].classList.remove('active');
+    }
+
+    //Show the active Tab content
+    document.getElementById(target).classList.add('active');
+    checkPaginationButtons();
+}
+
+const openModalBtnArray = document.querySelectorAll('.open-modal-btn');
+const modalContainer = document.querySelector('.modal');
+const closeModalBtn = document.querySelector('.close-modal');
+
+if (openModalBtnArray && modalContainer) {
+    openModalBtnArray.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            modalContainer.classList.add('show');
+            document.body.classList.add('modal-opened');
+        });
+    });
+
+
+    document.addEventListener('click', (e) =>{
+        if(modalContainer.classList.contains('show')) {
+            const isClickInside = modalContainer.contains(e.target);
+
+            if (!isClickInside) {
+                modalContainer.classList.remove('show');
+                document.body.classList.remove('modal-opened');
+            }
+
+        }
+    });
+    closeModalBtn.addEventListener('click', (e) =>{
+        modalContainer.classList.remove('show');
+        document.body.classList.remove('modal-opened');
+    });
+}
+
+//initialize portfolio slider
+const portfolioSliderEl = document.querySelector('.portfolio-slider');
+let portfolioSlider;
+if (portfolioSliderEl) {
+    portfolioSlider = new Swiper('.portfolio-slider', {
+        clickable: true,
+        pagination: {
+            el: '.portfolio-slider .swiper-pagination',
+            clickable: true,
+        }
+    });
+}
+//initialize white paper slider
+const whitePaperSliderEl = document.querySelector('.white-paper-slider');
+let whitePaperSlider;
+if (whitePaperSliderEl) {
+    whitePaperSlider = new Swiper('.white-paper-slider-block', {
+        clickable: true,
+        pagination: {
+            el: '.white-paper-slider-block .swiper-pagination',
+            clickable: true,
+        }
+    });
 }

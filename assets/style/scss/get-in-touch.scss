@@ -177,7 +177,7 @@
 					top: 8px;
 				}
 				&+label.error{
-					color: $errorcolor;
+					color: $secondColor;
 				}
 				&+label+.bar{
 					&:before, &:after{
@@ -199,7 +199,7 @@
 			font-size: 12px;
 		}
 		.error{
-			color: $errorcolor;
+			color: $secondColor;
 		}
 		.bar{
 			position: relative;
@@ -226,7 +226,7 @@
 			}
 			&.error{
 				&:before, &:after{
-					background: $errorcolor;
+					background: $secondColor;
 				}
 			}
 		}
@@ -520,7 +520,6 @@
 	}
 }
 
-
 .map-section {
 	position: relative;
 	.map {
@@ -639,8 +638,3 @@
     	height: 40px;
 	}
 }
-
-// .g-recaptcha{
-// 	display: flex;
-//     justify-content: center;
-// }
